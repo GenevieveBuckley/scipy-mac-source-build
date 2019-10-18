@@ -6,6 +6,7 @@ before_install:
   - brew cask install gfortran
   - brew install cython
   - pip install -r requirements.txt
+  - pip install Cython
 install:
   - git clone https://github.com/numpy/numpy.git
   - cd numpy
