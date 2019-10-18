@@ -4,15 +4,15 @@ os: osx
 before_install:
   - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - brew cask install gfortran
-  - brew install git
   - brew install python3
-  - git clone https://github.com/numpy/numpy.git
-  - git clone https://github.com/scipy/scipy.git
 install:
+  - git clone https://github.com/numpy/numpy.git
   - cd numpy
   - python setup.py build
   - python setup.py install
-  - cd ../scipy
+  - cd ..
+  - git clone https://github.com/scipy/scipy.git
+  - cd scipy
   - python setup.py build
   - python setup.py install
   - cd ..
