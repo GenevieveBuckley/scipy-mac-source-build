@@ -7,14 +7,14 @@ before_install:
 install:
   - git clone https://github.com/numpy/numpy.git
   - cd numpy
-  - python setup.py build
-  - python setup.py install
+  - python3 setup.py build
+  - python3 setup.py install
   - cd ..
   - git clone https://github.com/scipy/scipy.git
   - cd scipy
-  - python setup.py build
-  - python setup.py install
+  - python3 setup.py build
+  - python3 setup.py install
   - cd ..
 script:
-  - python numpy_tests.py
-  - python scipy_tests.py
+  - python3 numpy_tests.py
+  - python3 scipy_tests.py
