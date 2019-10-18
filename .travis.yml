@@ -4,7 +4,7 @@ os: osx
 before_install:
   - /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   - brew cask install gfortran
-  - pip install Cython
+  - brew install cython
   - pip install -r requirements.txt
 install:
   - git clone https://github.com/numpy/numpy.git
